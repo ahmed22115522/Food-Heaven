@@ -287,7 +287,7 @@ function displayAreas() {
         temp += `
         <div class="col-md-3 col-sm-6">
         <div onclick="displayEachArea('${imagesArray[i].countryName}')" class="country">
-            <img src="../imgs/Flags/${imagesArray[i].countryFlag}.png" alt="" class="w-50">
+            <img src="imgs/Flags/${imagesArray[i].countryFlag}.png" alt="" class="w-50">
             <p class="mt-2">${imagesArray[i].countryName}</p>
         </div>
         </div>
