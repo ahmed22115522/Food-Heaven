@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Heaven</title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../Css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/index.css">
+</head>
+<body>
+
+    <div class="home-button">
+        <a href="" class="text-white"><i class="fa-solid fa-house fa-xl"></i></a>
+    </div>
+
+    <section id="loading" style="background-color: #000;">
+
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </section>
+
+    <section id="search" class="mt-4" style="display: none;">
+        <div class="container position-relative w-75">
+            <div class="row gy-3">
+                <div class="col-md-6">
+                    <input id="mealName" type="text" class="form-control" placeholder="Search by meal name ....">
+                </div>
+                <div class="col-md-6">
+                    <input id="mealFirstL" type="text" class="form-control" placeholder="Search by first letter ...." maxlength="1">
+                </div>
+            </div>
+            <div class="row gy-3 my-5" id="searchBy">
+                    
+            </div>
+        </div>
+    </section>
+    
+    <nav class="menu">
+        <div class="side-menu bg-dark text-white d-flex flex-column justify-content-between">
+            <ul class="px-4 py-4">
+                <li class="item-1 my-1">
+                    <a>Search</a>
+                </li>
+                <li class="item-2 my-1">
+                    <a>Categories</a>
+                </li>
+                <li class="item-3 my-1">
+                    <a>Area</a>
+                </li>
+                <li class="item-4 my-1">
+                    <a>Ingredients</a>
+                </li>
+                <li class="item-5 my-1">
+                    <a>Contact Us</a>
+                </li>
+            </ul>
+            <div class="social-copyright p-4">
+                <div class="social-media text-muted">
+                    <i class="fa-brands fa-facebook-f pe-2 py-2"></i>
+                    <i class="fa-brands fa-twitter px-2 py-2"></i>
+                    <i class="fa-solid fa-globe px-2 py-2"></i>
+                </div>
+                <p class="text-muted">
+                    Copyright © 2022 All Rights Reserved.
+                </p>
+            </div>
+        </div>
+        <div class="side-nav  d-flex flex-column text-center justify-content-between align-items-center p-1 py-3">
+            <a href=""><img src="../imgs/output-onlinepngtools.png" alt="Logo" class="w-75"></a>
+            <i class="fa fa-align-justify fa-xl" id="toggle"></i>
+            <div class="social">
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes mt-2"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="main-products" style="display: block;">
+        <div class="container my-5 py-5 w-75 m-auto position-relative">
+            <div class="row py-5 g-5" id="firstData">
+                
+            </div>
+        </div>
+    </section>
+
+    <section  id="foodDiscription" class="mt-5" style="display: none;">
+        <div class="container my-5 py-5 w-75 m-auto position-relative">
+            <div class="row gy-3 text-white" id="discriptionMeal">
+            </div>
+        </div>
+    </section>
+
+    <section id="catigeories" style="display: none;">
+        <div class="container my-5 py-5 w-75 m-auto position-relative">
+            <div class="row py-5 g-5 text-white" id="catigeoriesData">
+            </div>
+        </div>
+    </section>
+
+    <section id="area" style="display: none;">
+        <div class="container my-5 py-5 w-75 m-auto position-relative">
+            <div class="row g-5 py-5 text-white text-center" id="areasFlags">
+            </div>
+        </div>
+    </section>
+
+    <section id="ingredients" style="display: none;">
+        <div class="container my-5 py-5 w-75 m-auto position-relative">
+            <div class="row g-5 py-5 text-white text-center" id="ingredientsItems">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form" style="display: none;">
+        <div class="container position-relative w-75 py-5 text-center">
+            <h2 class="text-light mb-5">Contac Us</h2>
+            <form >
+                <div class="row gy-3 w-75 m-auto">
+                    <div class="col-md-6">
+                        <input  id="PName" type="text" class="form-control" placeholder="Enter Your Name">
+                        <div id="PNameAlert" class="alert alert-danger mt-2 d-none" role="alert">
+                            Your name should start with capital letter and 3 to 15 letters 
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="PEmail" type="text" class="form-control" placeholder="Enter Email">
+                        <div id="PEmailAlert" class="alert alert-danger mt-2 d-none" role="alert">
+                            Email example zzz@cc.aa
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="PPhone" type="text" class="form-control" placeholder="Enter Phone">
+                        <div id="PPhoneAlert" class="alert alert-danger mt-2 d-none" role="alert">
+                            Enter your current phone number 
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="PAge" type="text" class="form-control" placeholder="Enter Age">
+                        <div  id="PAgeAlert" class="alert alert-danger mt-2 d-none" role="alert">
+                            Your Age should be from 10 to 99 years old
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="PPassword" type="password" class="form-control" placeholder="Enter Password">
+                        <div id="PPasswordAlert" class="alert alert-danger mt-2 d-none" role="alert">
+                            Minimum letters is 8 no special charcters are allowed
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="PRePassword" type="password" class="form-control" placeholder="Enter RePassword">
+                        <div id="PRePasswordAlert" class="alert alert-danger mt-2 d-none" role="alert">
+                            The re password is not match the password
+                        </div>
+                    </div>
+                </div>
+                <input id="btn" type="submit"  value="Submit" class="p-2 fw-bold text-white border my-5 btn fs-5">
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="../JS/jquery_3.6.1.js"></script>
+    <script src="https://kit.fontawesome.com/7e1e30f40f.js" crossorigin="anonymous"></script>
+    <script src="../JS/index.js"></script>
+</body>
+</html>
